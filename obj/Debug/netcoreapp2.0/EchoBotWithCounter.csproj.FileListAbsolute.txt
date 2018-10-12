@@ -1,0 +1,12 @@
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\obj\Debug\netcoreapp2.0\EchoBotWithCounter.csprojAssemblyReference.cache
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\obj\Debug\netcoreapp2.0\EchoBotWithCounter.csproj.CoreCompileInputs.cache
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\obj\Debug\netcoreapp2.0\EchoBotWithCounter.AssemblyInfoInputs.cache
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\obj\Debug\netcoreapp2.0\EchoBotWithCounter.AssemblyInfo.cs
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\obj\Debug\netcoreapp2.0\EchoBotWithCounter.dll
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\obj\Debug\netcoreapp2.0\EchoBotWithCounter.pdb
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\LucaLone-Splity-Bot.bot
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\EchoBotWithCounter.deps.json
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\EchoBotWithCounter.runtimeconfig.json
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\EchoBotWithCounter.runtimeconfig.dev.json
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\EchoBotWithCounter.dll
+C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\EchoBotWithCounter.pdb

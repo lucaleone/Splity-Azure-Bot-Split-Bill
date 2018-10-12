@@ -1,0 +1,52 @@
+{
+  "name": "LucaLone-Splity-Bot",
+  "padlock": "Cqex8FuW224mYaGAmXu+EA==!ae62ns4e9YKmVEjJZ9OD8Q6IWQr67m6fOIHcwqOIq/gFRGwS0zN05tOrOtfO0NsX",
+  "version": "2.0",
+  "services": [
+    {
+      "tenantId": "f1fa3988-5f4f-476d-ad76-a1d9ac5984f0",
+      "subscriptionId": "27f080d0-6a0b-444f-b7cf-ec73166ff7af",
+      "resourceGroup": "LucaLeoneTeamsBots",
+      "serviceName": "LucaLone-Splity-Bot",
+      "type": "abs",
+      "name": "LucaLone-Splity-Bot",
+      "id": "1"
+    },
+    {
+      "connectionString": "tpG1OOMNfOtux06qv5Z9Pg==!kkG9Rzy7qfkF45/jFj/nnAhyVocgDmsMMlDkUIAHFaxznO+qxa9tUa4KOCAMOcLGFVefeG7GCCwh6D57Ea/HuO2jsXVSKakuJZLntm55wnhQUj/CUoHq54OEGi8dcjRWfOTrnD6G099UgjTUq2a45qOsACk4Qru3pmtd3jKjF6m5/HGOjwizWUvLVVDj4Ph24EsRZ+iDQAczJAYQa7+Pka0ETK37+Kr18TrCdOfKbso=",
+      "tenantId": "f1fa3988-5f4f-476d-ad76-a1d9ac5984f0",
+      "subscriptionId": "27f080d0-6a0b-444f-b7cf-ec73166ff7af",
+      "resourceGroup": "LucaLeoneTeamsBots",
+      "serviceName": "lucalonesplitybotdb",
+      "type": "blob",
+      "id": "2"
+    },
+    {
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages",
+      "type": "endpoint",
+      "name": "development",
+      "id": "3"
+    },
+    {
+      "appId": "41c944ea-bb9d-47a3-a293-ea258467ef73",
+      "appPassword": "52HOXRV0oo8cELwzNAi78Q==!ip03I52j0FK3oHRrC71O+MjcquVr+UwAYFZF2n6lfsg=",
+      "endpoint": "https://lucalone-splity-bot.azurewebsites.net/api/messages",
+      "type": "endpoint",
+      "name": "production",
+      "id": "4"
+    },
+    {
+      "instrumentationKey": "AzJiIofnVxTcP+GVni4QNQ==!3bsnl31QeExJVx98ybXx4J5Qh/OXU07ph7ata11jCK7oqCsSZNVcCU1BI3hfEEiX",
+      "applicationId": "e89aa005-561f-4b16-b5c3-20c8e8d9b4da",
+      "apiKeys": {},
+      "tenantId": "f1fa3988-5f4f-476d-ad76-a1d9ac5984f0",
+      "subscriptionId": "27f080d0-6a0b-444f-b7cf-ec73166ff7af",
+      "resourceGroup": "LucaLeoneTeamsBots",
+      "serviceName": "LucaLone-Splity-Botvxnil4",
+      "type": "appInsights",
+      "id": "5"
+    }
+  ]
+}
