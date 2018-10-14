@@ -10,3 +10,16 @@ C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\Ech
 C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\EchoBotWithCounter.runtimeconfig.dev.json
 C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\EchoBotWithCounter.dll
 C:\Users\lleone\source\repos\LucaLone-Splity-Bot-src\bin\Debug\netcoreapp2.0\EchoBotWithCounter.pdb
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\bin\Debug\netcoreapp2.0\LucaLone-Splity-Bot.bot
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\bin\Debug\netcoreapp2.0\EchoBotWithCounter.deps.json
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\bin\Debug\netcoreapp2.0\EchoBotWithCounter.runtimeconfig.json
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\bin\Debug\netcoreapp2.0\EchoBotWithCounter.runtimeconfig.dev.json
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\bin\Debug\netcoreapp2.0\EchoBotWithCounter.dll
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\bin\Debug\netcoreapp2.0\EchoBotWithCounter.pdb
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\obj\Debug\netcoreapp2.0\EchoBotWithCounter.csprojAssemblyReference.cache
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\obj\Debug\netcoreapp2.0\EchoBotWithCounter.csproj.CoreCompileInputs.cache
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\obj\Debug\netcoreapp2.0\EchoBotWithCounter.AssemblyInfoInputs.cache
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\obj\Debug\netcoreapp2.0\EchoBotWithCounter.AssemblyInfo.cs
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\obj\Debug\netcoreapp2.0\EchoBotWithCounter.dll
+C:\Users\lucal\Documents\GitHub\Splity-Azure-Bot-Split-Bill\obj\Debug\netcoreapp2.0\EchoBotWithCounter.pdb
