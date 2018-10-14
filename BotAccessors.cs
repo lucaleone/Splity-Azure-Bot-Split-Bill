@@ -1,7 +1,9 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
 using System;
+using EchoBotWithCounter;
+using EchoBotWithCounter.States;
 using Microsoft.Bot.Builder;
 
 namespace Microsoft.BotBuilderSamples
@@ -12,16 +14,18 @@ namespace Microsoft.BotBuilderSamples
     ///  - See the Startup.cs file for more details on creating the Singleton that gets
     ///    injected into the constructor.
     /// </summary>
-    public class EchoBotAccessors
+    public class BotAccessors
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="EchoBotAccessors"/> class.
+        /// Initializes a new instance of the <see cref="BotAccessors"/> class.
         /// Contains the <see cref="ConversationState"/> and associated <see cref="IStatePropertyAccessor{T}"/>.
         /// </summary>
-        /// <param name="conversationState">The state object that stores the counter.</param>
-        public EchoBotAccessors(ConversationState conversationState)
+        /// <param name="conversationState">The state object that stores the statuses.</param>
+        /// <param name="userState">The state object that stores the user status.</param>
+        public BotAccessors(ConversationState conversationState, UserState userState)
         {
             ConversationState = conversationState ?? throw new ArgumentNullException(nameof(conversationState));
+            UserState = userState ?? throw new ArgumentNullException(nameof(userState));
         }
 
         /// <summary>
@@ -29,7 +33,7 @@ namespace Microsoft.BotBuilderSamples
         /// </summary>
         /// <remarks>Accessors require a unique name.</remarks>
         /// <value>The accessor name for the counter accessor.</value>
-        public static string CounterStateName { get; } = $"{nameof(EchoBotAccessors)}.CounterState";
+        public static string CounterStateName { get; } = $"{nameof(BotAccessors)}.CounterState";
 
         /// <summary>
         /// Gets or sets the <see cref="IStatePropertyAccessor{T}"/> for CounterState.
@@ -40,9 +44,26 @@ namespace Microsoft.BotBuilderSamples
         public IStatePropertyAccessor<CounterState> CounterState { get; set; }
 
         /// <summary>
+        /// Gets the <see cref="IStatePropertyAccessor{T}"/> name used for the <see cref="WelcomeUserState"/> accessor.
+        /// </summary>
+        /// <remarks>Accessors require a unique name.</remarks>
+        /// <value>The accessor name for the WelcomeUser accessor.</value>
+        public static string WelcomeUserName { get; } = $"{nameof(BotAccessors)}.WelcomeUserState";
+
+        /// <summary>
+        /// Gets or sets the <see cref="IStatePropertyAccessor{T}"/> for WelcomeUserState.
+        /// </summary>
+        /// <value>
+        /// The accessor stores the welcome status for the conversation.
+        /// </value>
+        public IStatePropertyAccessor<WelcomeUserState> WelcomeUserState { get; set; }
+
+        /// <summary>
         /// Gets the <see cref="ConversationState"/> object for the conversation.
         /// </summary>
         /// <value>The <see cref="ConversationState"/> object.</value>
         public ConversationState ConversationState { get; }
+
+        public UserState UserState { get; }
     }
 }

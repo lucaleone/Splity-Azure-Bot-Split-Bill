@@ -3,6 +3,7 @@
 
 using System;
 using System.Linq;
+using EchoBotWithCounter.States;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Bot.Builder;
@@ -55,10 +56,10 @@ namespace Microsoft.BotBuilderSamples
         /// <seealso cref="https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0"/>
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddBot<EchoWithCounterBot>(options =>
+            services.AddBot<Bot>(options =>
             {
                 // Creates a logger for the application to use.
-                ILogger logger = _loggerFactory.CreateLogger<EchoWithCounterBot>();
+                ILogger logger = _loggerFactory.CreateLogger<Bot>();
 
                 var secretKey = Configuration.GetSection("botFileSecret")?.Value;
                 var botFilePath = Configuration.GetSection("botFilePath")?.Value;
@@ -126,11 +127,15 @@ namespace Microsoft.BotBuilderSamples
                 var conversationState = new ConversationState(dataStore);
 
                 options.State.Add(conversationState);
+
+                var userState = new UserState(dataStore);
+
+                options.State.Add(userState);
             });
 
             // Create and register state accesssors.
             // Acessors created here are passed into the IBot-derived class on every turn.
-            services.AddSingleton<EchoBotAccessors>(sp =>
+            services.AddSingleton<BotAccessors>(sp =>
             {
                 var options = sp.GetRequiredService<IOptions<BotFrameworkOptions>>().Value;
                 if (options == null)
@@ -144,11 +149,18 @@ namespace Microsoft.BotBuilderSamples
                     throw new InvalidOperationException("ConversationState must be defined and added before adding conversation-scoped state accessors.");
                 }
 
+                var userState = options.State.OfType<UserState>().FirstOrDefault();
+                if (userState == null)
+                {
+                    throw new InvalidOperationException("ConversationState must be defined and added before adding conversation-scoped state accessors.");
+                }
+
                 // Create the custom state accessor.
                 // State accessors enable other components to read and write individual properties of state.
-                var accessors = new EchoBotAccessors(conversationState)
+                var accessors = new BotAccessors(conversationState, userState)
                 {
-                    CounterState = conversationState.CreateProperty<CounterState>(EchoBotAccessors.CounterStateName),
+                    CounterState = conversationState.CreateProperty<CounterState>(BotAccessors.CounterStateName),
+                    WelcomeUserState = conversationState.CreateProperty<WelcomeUserState>(BotAccessors.WelcomeUserName),
                 };
 
                 return accessors;
